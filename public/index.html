@@ -6,12 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./assets/js/script.js"></script>
 </head>
 <body>
   <header class="bg-yellow">
     <nav class="container">
-        <button class="md:hidden"><i class="fa-solid fa-bars"></i></button>
-        <ul class="md:grid grid-cols-3 *:text-center *:text-white *:py-3">
+        <button class="md:hidden" id="toggle-menu"><i class="fa-solid fa-bars"></i></button>
+        <ul class="hidden md:grid grid-cols-3 *:text-center *:text-white *:py-3" id="menuList">
             <li class="group relative">
                 <a href="" class="block group-hover:text-blue">Card Section</a>
                 <ul class="hidden group-hover:block absolute left-0 top-10 bg-blue w-full">
@@ -20,7 +21,7 @@
                     <li><a href="">Card Section 3</a></li>
                 </ul>
             </li>
-            <li class="border-l border-r border-white group relative">
+            <li class="md:border-l md:border-r border-white group relative">
                 <a href="" class="block group-hover:text-blue">Number Section</a>
                 <ul class="hidden group-hover:block absolute left-0 top-10 bg-blue w-full">
                     <li><a href="">Number 1</a></li>
@@ -28,7 +29,7 @@
                     <li><a href="">Number 3</a></li>
                 </ul>
             </li>
-            <li class="group relative">
+            <li class="md:border-l md:border-r border-white group relative">
                 <a href="" class="group-hover:text-blue">FAQ Section</a>
                 <ul class="hidden group-hover:block absolute left-0 top-10 bg-blue w-full">
                     <li><a href="">FAQ 1</a></li>
@@ -38,11 +39,11 @@
             </li>
         </ul>
     </nav>
-    </header>
+ </header>
     <main>
         <section>
             <div class="container">
-                <h3 class="cmn-ttl"><span>Card Section</span></h3>
+                <h3 class="cmn-ttl mb-2"><span>Card Section</span></h3>
             </div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="group">
@@ -54,34 +55,100 @@
                         <p class="text-center text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
                     </div>
                 </div>
-                <div class="bg-green">
-                    <img src="./assets/images/Rectangle 10.png">
-                    <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
-                    <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                <div class="group">
+                    <div class="overflow-hidden">
+                        <img src="./assets/images/Rectangle 10.png" class="group-hover:scale-125">
+                    </div>
+                    <div class="bg-green">
+                        <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
+                        <p class="text-center text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                    </div>
                 </div>
-                <div class="bg-green">
-                    <img src="./assets/images/Rectangle 10.png">
-                    <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
-                    <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                <div class="group">
+                    <div class="overflow-hidden">
+                        <img src="./assets/images/Rectangle 10.png" class="group-hover:scale-125">
+                    </div>
+                    <div class="bg-green">
+                        <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
+                        <p class="text-center text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                    </div>
                 </div>
-                <div class="bg-green">
-                    <img src="./assets/images/Rectangle 10.png">
-                    <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
-                    <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                <div class="group">
+                    <div class="overflow-hidden">
+                        <img src="./assets/images/Rectangle 10.png" class="group-hover:scale-125">
+                    </div>
+                    <div class="bg-green">
+                        <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
+                        <p class="text-center text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                    </div>
                 </div>
-                <div class="bg-green">
-                    <img src="./assets/images/Rectangle 10.png">
-                    <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
-                    <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                <div class="group">
+                    <div class="overflow-hidden">
+                        <img src="./assets/images/Rectangle 10.png" class="group-hover:scale-125">
+                    </div>
+                    <div class="bg-green">
+                        <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
+                        <p class="text-center text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                    </div>
                 </div>
-                <div class="bg-green">
-                    <img src="./assets/images/Rectangle 10.png">
-                    <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
-                    <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                <div class="group">
+                    <div class="overflow-hidden">
+                        <img src="./assets/images/Rectangle 10.png" class="group-hover:scale-125">
+                    </div>
+                    <div class="bg-green">
+                        <h4 class="text-yellow text-center">Eyeshadow Palette with Mirror</h4>
+                        <p class="text-center text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, necessitatibus id quisquam dolorum</p>
+                    </div>
                 </div>
                 
+             </div>
+        </section>
+        <section>
+            <div class="container">
+                <h4 class="cmn-ttl mb-2"><span>Number Section</span></h4>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-blue p-4 group hover:pt-2 hover:py-6 hover:bg-orange transition-all">
+                        <h5 class="text-white text-4xl font-bold group-hover:text-yellow">01</h5>
+                        <p class="text-orange my-4 font-bold group-hover:text-white">Lorem is ipsum dolor sit amet</p>
+                        <p class="text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, deleniti facere architecto corporis nemo voluptatibus quod voluptatum officiis iure debitis consequatur culpa nihil ipsa recusandae tenetur. Autem doloribus inventore temporibus?</p>
+                    </div>
+                    <div class="bg-blue p-4 group hover:pt-2 hover:py-6 hover:bg-orange transition-all">
+                        <h5 class="text-white text-4xl font-bold group-hover:text-yellow">02</h5>
+                        <p class="text-orange my-4 font-bold group-hover:text-white">Lorem is ipsum dolor sit amet</p>
+                        <p class="text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, deleniti facere architecto corporis nemo voluptatibus quod voluptatum officiis iure debitis consequatur culpa nihil ipsa recusandae tenetur. Autem doloribus inventore temporibus?</p>
+                    </div>
+                    <div class="bg-blue p-4 group hover:pt-2 hover:py-6 hover:bg-orange transition-all">
+                        <h5 class="text-white text-4xl font-bold group-hover:text-yellow">03</h5>
+                        <p class="text-orange my-4 font-bold group-hover:text-white">Lorem is ipsum dolor sit amet</p>
+                        <p class="text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, deleniti facere architecto corporis nemo voluptatibus quod voluptatum officiis iure debitis consequatur culpa nihil ipsa recusandae tenetur. Autem doloribus inventore temporibus?</p>
+                    </div>
+                    <div class="bg-blue p-4 group hover:pt-2 hover:py-6 hover:bg-orange transition-all">
+                        <h5 class="text-white text-4xl font-bold group-hover:text-yellow">04</h5>
+                        <p class="text-orange my-4 font-bold group-hover:text-white">Lorem is ipsum dolor sit amet</p>
+                        <p class="text-white group-hover:text-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, deleniti facere architecto corporis nemo voluptatibus quod voluptatum officiis iure debitis consequatur culpa nihil ipsa recusandae tenetur. Autem doloribus inventore temporibus?</p>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container">
+                <h5 class="cmn-ttl mb-2"><span>FAQ Section</span></h5>
+            </div>
+            <div>
+                <dl id="faq">
+                    <dt class="bg-yellow p-4 faqTitle">Title 01</dt>
+                    <dd class="hidden bg-light-yellow p-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem quo, eveniet officia minus inventore autem! Dicta velit aliquid ut, deserunt similique repellendus? Vero minima velit pariatur laudantium quos ad!</dd>
+                    <dt class="bg-yellow p-4 faqTitle">Title 02</dt>
+                    <dd class="hidden bg-light-yellow p-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem quo, eveniet officia minus inventore autem! Dicta velit aliquid ut, deserunt similique repellendus? Vero minima velit pariatur laudantium quos ad!</dd>
+                    <dt class="bg-yellow p-4 faqTitle">Title 03</dt>
+                    <dd class="hidden bg-light-yellow p-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem quo, eveniet officia minus inventore autem! Dicta velit aliquid ut, deserunt similique repellendus? Vero minima velit pariatur laudantium quos ad!</dd>
+                    <dt class="bg-yellow p-4 faqTitle">Title 04</dt>
+                    <dd class="hidden bg-light-yellow p-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem quo, eveniet officia minus inventore autem! Dicta velit aliquid ut, deserunt similique repellendus? Vero minima velit pariatur laudantium quos ad!</dd>
+                </dl>
             </div>
         </section>
     </main>
+    <footer class="bg-black text-white py-6">
+        <p class="text-center">@Copy Right 2024</p>
+    </footer>
 </body>
 </html>

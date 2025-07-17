@@ -19,6 +19,8 @@ module.exports = {
       'orange': "var(--orange)",
       'white': "var(--white)",
       'black': "var(--black)",
+      'gray': "var(--gray)",
+      'light-yellow': "var(--light-yellow)",
     },
     
     extend: {

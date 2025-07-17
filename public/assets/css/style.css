@@ -456,6 +456,8 @@ video {
   --orange: #f97316;
   --white: #fff;
   --black: #000;
+  --gray: #ddd;
+  --light-yellow: #FFFFC5;
 }
 
 body{
@@ -606,6 +608,15 @@ body{
   }
 }
 
+section{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+section:nth-child(even){
+  background-color: var(--gray);
+}
+
 .cmn-ttl{
   position: relative;
   text-align: center;
@@ -645,6 +656,23 @@ body{
   top: 2.5rem;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.block{
+  display: block;
+}
+
 .grid{
   display: grid;
 }
@@ -657,6 +685,10 @@ body{
   width: 100%;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -665,20 +697,20 @@ body{
   gap: 0.5rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
 
-.border-l{
-  border-left-width: 1px;
-}
-
-.border-r{
-  border-right-width: 1px;
-}
-
 .border-white{
   border-color: var(--white);
+}
+
+.bg-black{
+  background-color: var(--black);
 }
 
 .bg-blue{
@@ -689,12 +721,42 @@ body{
   background-color: var(--green);
 }
 
+.bg-light-yellow{
+  background-color: var(--light-yellow);
+}
+
 .bg-yellow{
   background-color: var(--yellow);
 }
 
+.p-4{
+  padding: 1rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.text-orange{
+  color: var(--orange);
 }
 
 .text-white{
@@ -703,6 +765,12 @@ body{
 
 .text-yellow{
   color: var(--yellow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .\*\:py-3 > *{
@@ -716,6 +784,19 @@ body{
 
 .\*\:text-white > *{
   color: var(--white);
+}
+
+.hover\:bg-orange:hover{
+  background-color: var(--orange);
+}
+
+.hover\:py-6:hover{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hover\:pt-2:hover{
+  padding-top: 0.5rem;
 }
 
 .group:hover .group-hover\:block{
@@ -732,8 +813,12 @@ body{
   color: var(--blue);
 }
 
-.group:hover .group-hover\:text-orange{
-  color: var(--orange);
+.group:hover .group-hover\:text-white{
+  color: var(--white);
+}
+
+.group:hover .group-hover\:text-yellow{
+  color: var(--yellow);
 }
 
 @media (min-width: 720px){
@@ -743,5 +828,13 @@ body{
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:border-l{
+    border-left-width: 1px;
+  }
+
+  .md\:border-r{
+    border-right-width: 1px;
   }
 }
